@@ -1,0 +1,460 @@
+* {
+    font-family: 'Hind', sans-serif;
+    color: #1E2431;
+    /* box-sizing: border-box; */
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* HEADER */
+
+header {
+    /* overflow: hidden; */
+    background-color: white;
+    padding: 20px 10px;
+    margin-top: 5%;
+}
+
+.logo {
+  max-width: 100%;
+  margin-top: -10%;
+}
+
+  
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+} 
+
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header button {
+    top: 5%;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 3px solid #7B8294;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+    padding: 10px;
+}
+  
+header button:hover {
+    background-color: #7B8294;
+    color: white;
+}
+
+.topbutton:hover a {
+    color: white;
+}
+
+.headercontact {
+    font-family: 'Questrial', sans-serif;
+}
+
+.headercontact a {
+  font-size: 15px;
+  padding: 0px;
+  padding-right: 3px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.headercontact a:hover {
+  color: #F79d15;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #7B8294;
+    z-index: 10;
+    /* height: 60px; */
+    /* align-self: flex-start; */
+    /* bottom: 0;
+    position: sticky; */
+  }
+
+/* .navtainer {
+    position: sticky;
+    top: 0;
+} */
+
+.nav-link {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+}
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .navbar-nav a:hover {
+      background-color: white;
+      color: #7B8294;
+    } 
+
+/* HERO*/
+
+.hero {
+    background-image: url('images/jumbotronsmall.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin:0;
+    font-family: 'Questrial', sans-serif;
+    text-shadow: 1px 1px 2px #FaC20D;
+    color: #fff;
+    z-index: 2;
+}
+
+h2 {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-shadow: 1px 1px 2px #FaC20D;
+    margin:0;
+    color: #fff;
+    z-index: 2;
+}
+
+
+.connectbutton {
+    border: 2px solid white;
+    padding: 10px 24px 12px 28px;
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.connectbutton:hover {
+    background-color: white;
+    color: #F47F1c;
+    border: 2px solid #F47F1c;
+}
+
+/* ABOUT */
+
+#about {
+    margin-top: 5%;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    margin-bottom: 3%;
+}
+    
+.abi {
+      border: 3px solid #7B8294;
+      border-radius: 25px;
+}
+    
+.abouttext {
+      font-size: 20px;
+}
+
+/* WHAT TO EXPECT */
+
+#expect {
+    margin-top: 5%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    /* width: auto; */
+    height: 500px;
+    /* margin: 2%; */
+}
+
+.expectimg {
+    height: 25%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.card-content {
+    padding: 10px 20px;
+}
+
+h4 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+}
+
+/* PRICING */
+#pricing {
+    margin: 5%;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #FDECB9;
+ }
+
+/* SPECIALTIES */
+
+.specialtiescontainer {
+    /* height: 500px; */
+    /* background-image: url('images/specialties.jpeg');
+    background-size: 100%; */
+    margin-top: 75px;
+    padding: 20px;
+    text-align: center;
+}
+
+.collapsible {
+    /* background-color: #5E9BCF; */
+    background-color: #7B8294;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 30px;
+    width: 75%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid white;
+    font-family: 'Questrial', sans-serif;
+    
+  }
+  
+.active, .collapsible:hover {
+  background-color: #3475ad;
+}
+  
+.collapsible-content {
+    padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; 
+}
+
+/*FAQ*/
+
+#faq {
+    scroll-margin-top: 6em;
+  }
+  
+  .faq-container {
+      text-align: center;
+      margin-top: 75px;
+  }
+  
+  /*SCHEDULE FORM */
+  
+  /* #schedule {
+    min-height: 100vh;
+  } */
+  
+  .schedulemaincontainer {
+    background-image: url("./images/specialties.jpeg");
+    background-size: cover;
+    margin-top: 75px;
+    min-height: 100vh;
+  }
+  
+  .schedulemaincontainer h3 {
+    padding-top: 20px;
+  }
+  
+  .schedule-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  
+  .schedule-form-container {
+      width: 50%;
+      padding: 15px;
+      margin: 5px 0px 22px 20px;
+      margin-top: 75px;
+      margin-bottom: 50px;
+      display: inline-block;
+      border: none;
+      background-color: whitesmoke;
+      text-align: center;
+      font-size: 18px;
+  }
+  
+  .formheader {
+    font-size: 26px;
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  hr {
+      border: 1px solid gray;
+      margin-bottom: 25px;
+  }
+  
+  .innerform {
+    text-align: left;
+    padding-left: 25%;
+  }
+  
+  .innerform p {
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  .schedule-button {
+      background-color: #5E9BCF;
+      padding: 14px 20px;
+      margin: 8px 10px;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+      width: 75%;
+      opacity: 0.9;
+      font-size: 22px;
+      color: white;
+      font-weight: bold;
+  }
+    
+  .schedule-button:hover {
+      opacity:2;
+  }
+  
+  label {
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  /* Error Modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer-wrapper {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .footer-wrapper a {
+    color:lightyellow;
+    text-decoration: none;
+  }
+  
+  .footer-wrapper a:hover {
+    font-weight: bold;
+  }
+  
+  /* MEDIA QUERIES */
+
+  @media screen and (max-width: 720px) {
+
+    h3 {
+      max-width: 95%;
+      margin: 2%, auto, 2%, auto;
+      text-align: center;
+    }
+
+    .aboutimage {
+      text-align: center;
+    }
+
+    .abi {
+      width: 95%;
+    }
+
+    .abouttext {
+      text-align: center;
+    }
+
+    .abouttext p {
+      padding: 2%;
+    }
+
+    .card {
+      margin: auto;
+      margin-top: 2%;
+      width: 95%;
+    }
+
+    .schedule-form-container {
+      margin: auto;
+      margin-top: 5%;
+      width: 90%;
+    }
+  }
