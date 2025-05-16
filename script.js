@@ -70,17 +70,17 @@ function formDirect() {
   //Insurance Pay
   if (document.getElementById("insurance").checked) {
     window.open(
-      "https://headway.co/providers/abilash-pulicken", "_blank");
+      "https://garuda.clientsecure.me/request/service", "_blank");
   }
   //Cash Pay New Patient
   else if (document.getElementById("newpatient").checked) {
     window.open(
-      "https://abilash-pulicken.clientsecure.me/request/service", "_blank");
+      "https://garuda.clientsecure.me/request/service", "_blank");
   }
   //Cash Pay Existing Patient
   else if (document.getElementById("cash").checked){
     window.open(
-      "https://abilash-pulicken.clientsecure.me/sign-in", "_blank");
+      "https://garuda.clientsecure.me/request/service", "_blank");
   }
   else {
     alert("Please indicate your payment method")
